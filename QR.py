@@ -116,8 +116,8 @@ def create_qr_with_center_block(url, text, output_path,
 # CONFIGURATION
 # ------------------------
 url = "https://forms.gle/xvW9kUkar5P2o5VK6"
-text = "LTC Crossing Form"
-output_path = "output/qr_with_centered_text_logo.png"
+text = "LTCrossing Form"
+output_path = "output/qr_output.png"
 logo_path = "logoAEGEE.png"
 
 # Generate QR
