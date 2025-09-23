@@ -19,7 +19,7 @@ output_path = "output/qr_output.png"
 logo_path = "logoAEGEE.png"
 ```
 
-```
+``` bash
 python3 QR.py
 ```
 
