@@ -61,16 +61,33 @@ def create_qr_with_center_block(url, text, output_path,
         except:
             font = ImageFont.load_default()
 
-    # Wrap text
-    wrapped_text = textwrap.fill(text, width=12).split("\n")
+    # Add horizontal padding
+    padding_x = block_size // 12
+    max_text_width = block_size - 2 * padding_x
+
+    # Wrap text to fit inside padded width
+    words = text.split(" ")
+    wrapped_lines = []
+    current_line = ""
+
+    for word in words:
+        test_line = current_line + (" " if current_line else "") + word
+        bbox = draw.textbbox((0, 0), test_line, font=font)
+        if bbox[2] - bbox[0] <= max_text_width:
+            current_line = test_line
+        else:
+            wrapped_lines.append(current_line)
+            current_line = word
+    if current_line:
+        wrapped_lines.append(current_line)
 
     # Calculate text block height
     line_height = font.getbbox("Ay")[3] - font.getbbox("Ay")[1]
-    total_text_height = line_height * len(wrapped_text)
+    total_text_height = line_height * len(wrapped_lines)
 
     # Center text in top half
     start_y = (block_size // 2 - total_text_height) // 2
-    for line in wrapped_text:
+    for line in wrapped_lines:
         bbox = draw.textbbox((0, 0), line, font=font)
         text_width = bbox[2] - bbox[0]
         x = (block_size - text_width) // 2
@@ -98,10 +115,12 @@ def create_qr_with_center_block(url, text, output_path,
 # ------------------------
 # CONFIGURATION
 # ------------------------
-url = "https://chat.whatsapp.com/XXXXXXXXXXXX"
-text = "WHATSAPP GROUP"
+url = "https://forms.gle/xvW9kUkar5P2o5VK6"
+text = "LTC Crossing Form"
 output_path = "output/qr_with_centered_text_logo.png"
 logo_path = "logoAEGEE.png"
 
 # Generate QR
-create_qr_with_center_block(url, text, output_path, logo_path,qr_color="#000000", bg_color="#f6f6f6",block_color="#163e7a")
+create_qr_with_center_block(url, text, output_path, logo_path,
+                            qr_color="#000000", bg_color="#f6f6f6",
+                            block_color="#163e7a")
