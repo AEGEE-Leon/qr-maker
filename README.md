@@ -43,7 +43,7 @@ Este script genera códigos QR con un **bloque de color** en el centro que conti
 
 ## ✅ Cómo usarlo
 
-### 1️⃣ Edita la lista `data`
+### 1️⃣ Edita las configuraciones del QR
 
 Dentro del script encontrarás algo así:
 
