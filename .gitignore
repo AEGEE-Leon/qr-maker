@@ -1,3 +1,5 @@
-output/*.png
+output/*
+!output/README.md
 
-img/+.*
+img/*
+!img/README.md
