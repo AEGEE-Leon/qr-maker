@@ -44,8 +44,8 @@ data = {
 #        "URL a la dirige",
 #        "nombre-foto.png"
 #    ),
-    "000-aegee_leon_es": (
-        "https://uleaegee.unileon.es/aegee-europe/",
+    "aegee_leon_es": (
+        "https://uleaegee.unileon.es/aegee-leon/",
         "000-aegee-leon.png"
     ),
     "aegee_leon_en": (
@@ -77,7 +77,7 @@ data = {
         "003-erasmus-activities.png"
     ),
     "socios_locales": (
-        "https://uleaegee.unileon.es/socios-locales",
+        "https://uleaegee.unileon.es/socios",
         "004-socios-locales.png"
     ),
     "local_members": (
@@ -128,6 +128,15 @@ data = {
         "paypal.me/aegeeleon",
         "010-paypal.png"
     ),  
+    "formulario_socios_locales": (
+        "https://forms.gle/qGH1w9onDb3dkez87",
+        "011-formulario-socios-locales.png"
+    ),
+    "whatsapp_aegee_leon": (
+        "https://wa.me/message/ULSG2JHPSQBLH1?src=qr",
+        "012-whatsapp-aegee-leon.png"
+    ),
+
 }
 
 # -----------------------------------------
