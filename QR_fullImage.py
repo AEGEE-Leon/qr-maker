@@ -136,6 +136,34 @@ data = {
         "https://wa.me/message/ULSG2JHPSQBLH1?src=qr",
         "012-whatsapp-aegee-leon.png"
     ),
+    "instagram_aegee_leon": (
+        "https://www.instagram.com/aegeeleon/",
+        "013-instagram-aegee-leon.png"
+    ),
+    "linktree_aegee_leon": (
+        "https://linktr.ee/aegeeleon",
+        "014-linktree-aegee-leon.png"
+    ),
+    "form_socio_erasmus_aegee_leon": (
+        "https://forms.gle/a6goCMgTRPzCWy3q7",
+        "015-formulario-socio-erasmus-aegee-leon.png"
+    ),
+    "link_pago_tasa_socio_erasmus_aegee_leon": (
+        "https://pay.sumup.com/b2c/QBSI6RX7",
+        "016-link-pago-tasa-socio-erasmus-aegee-leon.png"
+    ),   
+    "link_pago_solo_viaje_pajares_aegee_leon": (
+        "https://pay.sumup.com/b2c/QSTZGO54",
+        "017-link-pago-solo-viaje-pajares-aegee-leon.png"
+    ),
+    "link_pago_viaje_fee_pajares_aegee_leon": (
+        "https://pay.sumup.com/b2c/QBSI6RX7",
+        "018-link-pago-viaje-fee-pajares-aegee-leon.png"
+    ),
+    "form_viaje_pajares_aegee_leon": (
+        "https://forms.gle/GEeyyFUZ2JGKp5Ff9",
+        "019-formulario-viaje-pajares-aegee-leon.png"
+    ),
 
 }
 
